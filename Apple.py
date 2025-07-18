@@ -1,6 +1,9 @@
+from Path import get_path
 import random
 import Data
 import pygame.mixer
+import os
+import sys
 
 
 def increase_score():
@@ -10,7 +13,7 @@ def increase_score():
 class Apple:
     def __init__(self, bowl):
         pygame.mixer.init()
-        self.sound = pygame.mixer.Sound("Sounds\\pop.wav")
+        self.sound = pygame.mixer.Sound(get_path("Sounds/pop.wav"))
         self.r = random.Random()
         self.bowl = bowl
         self.pos_x = self.r.randint(0, 417)

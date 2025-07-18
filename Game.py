@@ -1,11 +1,12 @@
+from Path import get_path
 import pygame
 import Apple
 import Bowl
 import threading
 import Data
 import Timer
-import math
 import Results
+import math
 
 
 def get_score():
@@ -20,9 +21,9 @@ class Main:
         self.bowl_timer = Timer.Timer()
         self.bowl_timer.reset()
         self.apples = []
-        self.backdrop = pygame.image.load("Images\\Blue Sky.png")
-        self.apple_image = pygame.image.load("Images\\apple.png")
-        self.bowl_image = pygame.image.load("Images\\bowl.png")
+        self.backdrop = pygame.image.load(get_path("Images\\Blue Sky.png"))
+        self.apple_image = pygame.image.load(get_path("Images\\apple.png"))
+        self.bowl_image = pygame.image.load(get_path("Images\\bowl.png"))
         pygame.init()
         pygame.display.set_caption("Apple Catching Game")
         self.screen = pygame.display.set_mode((480, 360))
