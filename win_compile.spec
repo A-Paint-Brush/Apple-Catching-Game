@@ -2,10 +2,10 @@
 
 
 a = Analysis(
-    ['main.py', 'Apple.py', 'Bowl.py', 'Data.py', 'Game.py', 'Results.py', 'Timer.py'],
+    ['main.py', 'Apple.py', 'Bowl.py', 'Data.py', 'Game.py', 'Path.py', 'Results.py', 'Timer.py'],
     pathex=[],
     binaries=[],
-    datas=[('Images', 'Images'), ('Sounds', 'Sounds')],
+    datas=[('.\\Images', '.\\Images'), ('.\\Sounds', '.\\Sounds')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -35,5 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['C:\\Users\\cliff\\Pictures\\Icon Resources\\pygame.ico'],
+    icon=['pygame.ico'],
 )
